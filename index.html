@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Smooch+Sans:wght@100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <header class="header">
+        <h3>QUIZ</h3>
+        <img src="icon-moon.png" alt="" id="theme">
+    </header>
+    <main>
+        <div class="allSections active">
+            <section class="welcome">
+                <h4>INTERACTIVE QUIZ</h4>
+                <h1>Test your <span>knowledge.</span></h1>
+                <p>Choose a category, answer the questions, and see how well you score.</p>
+            </section>
+            <section class="categories">
+                <div class="category" data-category="general">
+                    <div class="sub">
+                        <img src="icon-knowledge.png" alt="">
+                        <div>
+                            <h4>General Knowledge</h4>
+                            <p>5 questions</p>
+                        </div>
+                    </div>
+                    <img src="icon-arrow.png" alt="">
+                </div>
+                <div class="category" data-category="science">
+                    <div class="sub">
+                        <img src="icon-science.png" alt="">
+                        <div>
+                            <h4>Science</h4>
+                            <p>5 questions</p>
+                        </div>
+                    </div>
+                    <img src="icon-arrow.png" alt="">
+                </div>
+                <div class="category" data-category="history">
+                    <div class="sub">
+                        <img src="icon-history.png" alt="">
+                        <div>
+                            <h4>History</h4>
+                            <p>5 questions</p>
+                        </div>
+                    </div>
+                    <img src="icon-arrow.png" alt="">
+                </div>
+                <div class="category" data-category="technology">
+                    <div class="sub">
+                        <img src="icon-technology.png" alt="">
+                        <div>
+                            <h4>Technology</h4>
+                            <p>5 questions</p>
+                        </div>
+                    </div>
+                    <img src="icon-arrow.png" alt="">
+                </div>
+            </section>
+        </div>
+        <section class="quizQuestions">
+            <div class="headQuiz">
+                <button class="headQuizButton">← Categories</button>
+                <span class="totalQuestions">Quest 1 of 5</span>
+            </div>
+            <input type="range" name="" id="progressBar" value="5">
+            <div class="quizQuestion">
+                <p class="questionNumber">01</p>
+                <h1 class="quizQuestionNum">Which planet is known as the red planet?</h1>
+                <button class="quizAnswers">Venus</button>
+                <button class="quizAnswers">Mars</button>
+                <button class="quizAnswers">Jupiter</button>
+                <button class="quizAnswers">Mercury</button>
+            </div>
+            <button class="checkAnswer">Check Answer</button>
+        </section>
+        <section class="result">
+            <img src="icon-check.png" alt="">
+            <h5>QUIZ COMPLETE</h5>
+            <p class="remark">Perfect Score!</p>
+            <span class="resultSpan"><span class="score">5</span><span class=numQuest>/5</span></span>
+            <p class="summary">You scored <span class="howManyRight">5</span> out of <span class="totalQuest">5</span> in General Knowledge.</p>
+            <div class="choice">
+                <button class="tryAgain">Try Again</button>
+                <button class="backtoBaseButton">Choose Another Quiz</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
